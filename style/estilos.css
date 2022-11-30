@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+/* mobile first 0px-500px*/
+
+* {
+    margin:0;
+    padding:0;
+} 
+
+body{
+    background-image: url(../images/Gustavo_Cerati-Bocanada-Interior_Frontal.jpg);
+}
+
+footer {
+    background-color: orange;
+    padding: 15px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-image: initial;
+    display: flex;
+    justify-content: center;
+}
+
+header a{
+    font-size: x-large;
+    color: rgb(127, 12, 221);
+    padding: 8px;
+    font-style: italic;
+    text-align: center;
+    display: block;
+}
+
+.navBarra { 
+    background-color: orange;
+    border: solid black 5px;
+    margin-bottom: 60px;
+}  
+
+a {
+    color: white;
+    font-size: large;
+    text-decoration: none;
+}
+
+main{
+    text-align: center;
+    color: white;
+}
+
+/*declaro grid areas*/
+
+
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+}
+
+.bienvenidos{
+    grid-area: bienvenidos;
+}
+
+.parrafoInicial{
+    grid-area: parrafoInicial;
+}
+
+.indice{
+    grid-area: indice;
+}
+
+.contacto{
+    grid-area: contacto;
+}
+
+.final{
+    grid-area: final;
+}
+
+.img{
+    grid-area: img;
+}
+
+footer{
+    grid-area: footer;
+}
+
+
+body{
+    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "bienvenidos"
+    "parrafoInicial"
+    "indice"
+    "contacto"
+    "final"
+    "img"
+    "footer";
+}
+
+
+@media(min-width:700px){
+    body {
+        background-image: url(../images/Gustavo_Cerati-Bocanada-Interior_Frontal.jpg);
+        min-height: 100vh;
+    }
+    main{
+        margin-left: 400px;
+        margin-right: 400px;
+    }
+}
+
+@media(min-width:1024px){
+    main {
+        background-color: white;
+        color: black;
+        margin-left: 400px;
+        margin-right: 400px;
+}
+    .parrafoInicial{
+        color: black;
+    }
+    body {
+        background-image: url(../images/Gustavo_Cerati-Bocanada-Interior_Frontal.jpg);
+        font-family: Poppins, sans-serif;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+    .navBarra { 
+        background-color: orange;
+        border: solid black 5px;
+        margin-bottom: 60px;
+    }  
+    
+    
+    
+    header{
+        align-items: center;
+    }
+    
+    nav li {
+        list-style-type: none;
+        background-color: orange;
+        margin-top: 5px;
+        margin-left: 150px;
+        padding: 5px;
+        display: inline-block;
+    }
+    
+    a {
+        color: white;
+        font-size: large;
+        text-decoration: none;
+    }
+    
+    main {
+        color: white;
+        margin-top: -61px;
+        margin-bottom: 0;
+    }
+    
+    h1 {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        font-size: 50px;
+    }
+    .parrafoInicial {
+        margin-left: 200px;
+        margin-right: 200px;
+        color: white;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .indice {
+        margin-left: 200px;
+        margin-right: 200px;
+        background-color: brown;
+        margin-bottom: 120px;
+        padding: 20px 20px 30px;
+        border-width: 20px;
+        border-style: solid;
+        border-color: black;
+        border-image: initial;
+        color: black;
+    }
+    
+    h2 {
+        padding-bottom: 30px;
+    }
+    
+    p {
+        padding: 15px;
+        font-size: 20px;
+    }
+    
+    .contacto {
+        font-size: 30px;
+        margin-left: 400px;
+        margin-right: 400px;
+        padding: 40px;
+        border-width: 20px;
+        border-style: double;
+        border-color: black;
+        border-image: initial;
+        color: black;
+        background-color: white;
+    }
+    
+    h5 {
+        font-size: 20px;
+        font-weight: unset;
+        margin-bottom: 30px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 100px;
+    }
+    
+    .img{
+        display: flex;
+        flex-direction: row;
+        border: solid black 5px;
+        margin-bottom: -15px;
+    }
+    
+    
+    footer a {
+        width: 10%;
+    }
+}
