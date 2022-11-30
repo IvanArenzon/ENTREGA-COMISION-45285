@@ -48,6 +48,8 @@ main{
     color: white;
 }
 
+
+
 /*declaro grid areas*/
 
 
@@ -123,9 +125,6 @@ body{
         margin-left: 400px;
         margin-right: 400px;
 }
-    .parrafoInicial{
-        color: black;
-    }
     body {
         background-image: url(../images/Gustavo_Cerati-Bocanada-Interior_Frontal.jpg);
         font-family: Poppins, sans-serif;
@@ -163,7 +162,7 @@ body{
     }
     
     main {
-        color: white;
+        color: black;
         margin-top: -61px;
         margin-bottom: 0;
     }
@@ -176,7 +175,6 @@ body{
     .parrafoInicial {
         margin-left: 200px;
         margin-right: 200px;
-        color: white;
         font-size: 20px;
         margin-bottom: 40px;
     }
